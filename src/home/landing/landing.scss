@@ -80,6 +80,23 @@
     justify-content: center;
     transition-delay: 0.5s;
 
+    &-menuList {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      align-self: flex-start;
+      padding-left: 100px;
+
+      h4 {
+        margin: 20px;
+        
+        &:hover {
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+
     &-menuBar {
       height: 100%;
       left: 0;

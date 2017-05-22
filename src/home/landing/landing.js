@@ -31,7 +31,7 @@ class Landing extends Component {
           <div className="landingContainer-lineRight" />
           <div className="landingContainer-lineBottom" />
           {/* Main Content */}
-          <div className="landingContainer-header" style={!this.state.menuActive ? {opacity: 1} : {opacity: 0}}>
+          <div className="landingContainer-header" style={!this.state.menuActive ? {opacity: 1, position: 'absolute'} : {opacity: 0, position: 'absolute'}}>
             <h1>Michael</h1>
             <h1>Mitrakos</h1>
             <div className="landingContainer-header-sub">
@@ -41,10 +41,16 @@ class Landing extends Component {
             </div>
           </div>
 
-          <div className="landingContainer-header" style={this.state.menuActive ? {opacity: 1} : {opacity: 0}}>
-            <div className="landingContainer-header-menuBar">
-              <h3>Menu</h3>
-              <h3>Menu</h3>
+          <div className="landingContainer-header" style={this.state.menuActive ? {opacity: 1, position: 'absolute'} : {opacity: 0, position: 'absolute'}}>
+            <div className="landingContainer-header-menuList">
+              <h2>Experience</h2>
+              <span className="small-divider" />
+              <h4>Verys</h4>
+              <h4>Civility International</h4>
+              <h4>Momentum Dashboard</h4>
+              <h4>HealthyU</h4>
+              <h4>Seat At the Table</h4>
+              <h4>Wobble Labs</h4>
             </div>
           </div>
 

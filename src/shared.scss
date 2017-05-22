@@ -4,3 +4,8 @@ $font-stack: 'Montserrat', sans-serif;
 $primary-color: #e1253b;
 $background-color: #121212;
 $transition-duration: 0.3s;
+
+.small-divider {
+  border-bottom: 1px solid gray;
+  width: 20vw;
+}
