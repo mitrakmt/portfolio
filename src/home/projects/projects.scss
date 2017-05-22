@@ -1,0 +1,198 @@
+@import '../../shared.scss';
+
+.projectsContainer {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 150px;
+    left: 50%;
+    margin-top: -52px;
+    background-color: #e1253b;
+    z-index: 22;
+  }
+
+  &-header {
+    padding-top: 5vh;
+
+    h1 {
+      font-size: 9vw;
+    }
+  }
+
+  &-list {
+    width: 65vw;
+    background-color: $background-color;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 100;
+    font-family: 'Soho-std-light';
+
+    &-entry {
+      height: 160px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 0px transparent;
+      display: flex;
+      flex-direction: row;
+
+      &-background {
+        opacity: 0;
+        background-image: url('http://conradhotels3.hilton.com/resources/media/ch/en_US/img/shared/carousel/main/CN_chicagosunset.jpg');
+        position: absolute;
+        width: 59.9vw;
+        height: 160px;
+        margin-left: 5vw;
+        background-position: center 55%;
+        background-size: cover;
+        transition-duration: $transition-duration;
+
+        &:hover {
+          opacity: .08;
+        }
+      }
+
+      &-labelBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        left: 0;
+        min-width: 160px;
+        width: 160px;
+        z-index: 110;
+
+        h1 {
+          font-size: 70px;
+          color: $background-color;
+        }
+      }
+
+      &-heading {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px 25px 20px;
+
+        h1 {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+
+        h3 {
+          color: $primary-color;
+          font-size: 20px;
+          font-weight: 200;
+          margin-top: 0;
+        }
+      }
+
+      &-arrow {
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        align-items: center;
+        width: 180px;
+        margin-left: auto;
+        height: 100%;
+        z-index: 170;
+        animation-duration: 1.0s;
+
+        &:hover {
+          animation-name: arrowAnimation;
+          animation-duration: 1.0s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes arrowAnimation {
+            0%   {margin-right: 0px;}
+            50%  {margin-right: -30px;}
+            100% {margin-right: 0px;}
+        }
+
+      }
+    }
+  }
+}
+
+
+.hackreactor-image {
+  z-index: 150;
+  transition-duration: $transition-duration;
+  background: black;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    transition-duration: $transition-duration;
+    background: url('http://static1.squarespace.com/static/522a22cbe4b04681b0bff826/t/581cc65fe4fcb5a68ecd940c/1478280803080/hrhq-avatar.png?format=1000w') rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+      color: transparent;
+    }
+  }
+}
+
+.momentum-image {
+  z-index: 150;
+  transition-duration: $transition-duration;
+  background: black;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    transition-duration: $transition-duration;
+    background: url('https://pbs.twimg.com/profile_images/854775242387894272/2vbBdD5c.jpg') rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+      color: transparent;
+    }
+  }
+}
+
+.civility-image {
+  z-index: 150;
+  transition-duration: $transition-duration;
+  background: black;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    transition-duration: $transition-duration;
+    background: url('https://s27.postimg.org/xq1bvof4z/Civ_Logo_Black.png') rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+      color: transparent;
+    }
+  }
+}
+
+.verys-image {
+  z-index: 150;
+  transition-duration: $transition-duration;
+  background: black;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    transition-duration: $transition-duration;
+    background: url('https://media.glassdoor.com/sqll/968657/verys-squarelogo-1426174317361.png') rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+      color: transparent;
+    }
+  }
+}
