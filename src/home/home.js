@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import background from '../background.jpg';
 import Landing from './landing/landing';
 import Projects from './projects/projects';
@@ -10,6 +11,14 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {};
+  }
+
+  componentDidMount() {
+    $(".landingContainer-discover").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".projectsContainer").offset().top
+      }, 1000);
+  });
   }
 
   render() {
