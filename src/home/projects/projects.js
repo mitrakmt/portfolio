@@ -29,43 +29,50 @@ class Projects extends Component {
         letter: 'V',
         company: 'Verys',
         title: 'Software Engineer',
-        imageName: 'verys-image'
+        imageName: 'verys-image',
+        tagName: 'verys'
       },
       {
         letter: 'C',
         company: 'Civility International',
         title: 'Chief Technology Officer',
-        imageName: 'civility-image'
+        imageName: 'civility-image',
+        tagName: 'civility-international'
       },
       {
         letter: 'M',
         company: 'Momentum',
         title: 'Software Engineer',
-        imageName: 'momentum-image'
+        imageName: 'momentum-image',
+        tagName: 'momentum'
       },
       {
         letter: 'H',
         company: 'Hack Reactor',
         title: 'Software Engineering Instructor',
-        imageName: 'hackreactor-image'
+        imageName: 'hackreactor-image',
+        tagName: 'hack-reactor'
       },
       {
         letter: 'H',
         company: 'HealthyU',
         title: 'Chief Technology Officer',
-        imageName: 'healthyu-image'
+        imageName: 'healthyu-image',
+        tagName: 'healthyu'
       },
       {
         letter: 'S',
         company: 'Seat At the Table',
         title: 'Board Director & Software Engineer',
-        imageName: 'seat-image'
+        imageName: 'seat-image',
+        tagName: 'seat-at-the-table'
       },
       {
         letter: 'W',
         company: 'Wobble Labs',
         title: 'Co-Founder',
-        imageName: 'wobble-image'
+        imageName: 'wobble-image',
+        tagName: 'wobble-labs'
       }
     ]
     return (
@@ -86,7 +93,7 @@ class Projects extends Component {
                   <h3>{experience.title}</h3>
                 </div>
                 <div className={`projectsContainer-list-entry-arrow arrow${index}`} id={`arrow${index}`}>
-                  <Link to={`/project/${experience.company}`}>
+                  <Link className="arrow-link" to={`/project/${experience.company}`} style={{textDecoration: 'none', padding: '30px'}}>
                     <FontAwesome
                       name='long-arrow-right'
                       size='3x'

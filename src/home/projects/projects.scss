@@ -119,6 +119,14 @@
   }
 }
 
+.arrow-link {
+  color: white;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
 #background0 {
   &:hover {
     opacity: .08;
