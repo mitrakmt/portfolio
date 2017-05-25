@@ -93,7 +93,7 @@ class Projects extends Component {
                   <h3>{experience.title}</h3>
                 </div>
                 <div className={`projectsContainer-list-entry-arrow arrow${index}`} id={`arrow${index}`}>
-                  <Link className="arrow-link" to={`/project/${experience.company}`} style={{textDecoration: 'none', padding: '30px'}}>
+                  <Link className="arrow-link" to={`/project/${experience.company}`} style={{textDecoration: 'none',  padding: '40px'}}>
                     <FontAwesome
                       name='long-arrow-right'
                       size='3x'

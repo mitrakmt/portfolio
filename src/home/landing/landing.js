@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 import FontIcon from 'material-ui/FontIcon';
 import ActionMenu from 'material-ui/svg-icons/action/reorder';
 import './landing.css';
@@ -45,12 +46,12 @@ class Landing extends Component {
             <div className="landingContainer-header-menuList">
               <h2>Experience</h2>
               <span className="small-divider" />
-              <h4>Verys</h4>
-              <h4>Civility International</h4>
-              <h4>Momentum Dashboard</h4>
-              <h4>HealthyU</h4>
-              <h4>Seat At the Table</h4>
-              <h4>Wobble Labs</h4>
+              <Link to={'/project/verys'} style={{color: 'white', textDecoration: 'none'}}><h4>Verys</h4></Link>
+              <Link to={'/project/civility-international'} style={{color: 'white', textDecoration: 'none'}}><h4>Civility International</h4></Link>
+              <Link to={'/project/momentum'} style={{color: 'white', textDecoration: 'none'}}><h4>Momentum Dashboard</h4></Link>
+              <Link to={'/project/healthyu'} style={{color: 'white', textDecoration: 'none'}}><h4>HealthyU</h4></Link>
+              <Link to={'/project/seat-at-the-table'} style={{color: 'white', textDecoration: 'none'}}><h4>Seat At the Table</h4></Link>
+              <Link to={'/project/wobble-labs'} style={{color: 'white', textDecoration: 'none'}}><h4>Wobble Labs</h4></Link>
             </div>
           </div>
 
