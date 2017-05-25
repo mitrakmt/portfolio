@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import 'font-awesome/css/font-awesome.css'
 import './projects.css';
@@ -11,8 +12,14 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    $("#background0").hover(() => {
-      $(".verys-image").toggleClass("hovered");
+    $(".projectsContainer-list-entry-arrow").hover((e) => {
+      let idLength = e.target.id.length;
+      let id = e.target.id[idLength - 1]
+      if (e.type === 'mouseenter') {
+        $(`#background${id}`).trigger("hover");
+      } else {
+        $(`#background${id}`).trigger("hover");
+      }
     });
   }
 
@@ -69,8 +76,8 @@ class Projects extends Component {
         {
           experiences.map((experience, index) => (
             <div className="projectsContainer-list" key={index}>
-              <div className="projectsContainer-list-entry">
-                <div className={`projectsContainer-list-entry-labelBox ${experience.imageName}`} id={`labelBox${index}`}>
+              <div className="projectsContainer-list-entry" id={index}>
+                <div className="projectsContainer-list-entry-labelBox">
                   <h1>{experience.letter}</h1>
                 </div>
                 <span className={`projectsContainer-list-entry-background`} id={`background${index}`} />
@@ -79,11 +86,13 @@ class Projects extends Component {
                   <h3>{experience.title}</h3>
                 </div>
                 <div className={`projectsContainer-list-entry-arrow arrow${index}`} id={`arrow${index}`}>
-                  <FontAwesome
-                    name='long-arrow-right'
-                    size='3x'
-                    style={{ textShadow: 'white' }}
-                  />
+                  <Link to={`/project/${experience.company}`}>
+                    <FontAwesome
+                      name='long-arrow-right'
+                      size='3x'
+                      style={{ textShadow: 'white' }}
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

@@ -114,85 +114,55 @@
             50%  {margin-right: -30px;}
             100% {margin-right: 0px;}
         }
-
       }
     }
   }
 }
 
-
-.hackreactor-image {
-  z-index: 150;
-  transition-duration: $transition-duration;
-  background: black;
-  background-position: center;
-  background-size: cover;
-
+#background0 {
   &:hover {
-    transition-duration: $transition-duration;
-    background: url('http://static1.squarespace.com/static/522a22cbe4b04681b0bff826/t/581cc65fe4fcb5a68ecd940c/1478280803080/hrhq-avatar.png?format=1000w') rgba(0, 0, 0, 0.3);
-    background-position: center;
-    background-size: cover;
-
-    h1 {
-      color: transparent;
-    }
+    opacity: .08;
   }
 }
 
-.momentum-image {
-  z-index: 150;
-  transition-duration: $transition-duration;
-  background: black;
-  background-position: center;
-  background-size: cover;
-
+#background1 {
   &:hover {
-    transition-duration: $transition-duration;
-    background: url('https://pbs.twimg.com/profile_images/854775242387894272/2vbBdD5c.jpg') rgba(0, 0, 0, 0.3);
-    background-position: center;
-    background-size: cover;
-
-    h1 {
-      color: transparent;
-    }
+    opacity: .08;
   }
 }
 
-.civility-image {
-  z-index: 150;
-  transition-duration: $transition-duration;
-  background: black;
-  background-position: center;
-  background-size: cover;
-
+#background2 {
   &:hover {
-    transition-duration: $transition-duration;
-    background: url('https://s27.postimg.org/xq1bvof4z/Civ_Logo_Black.png') rgba(0, 0, 0, 0.3);
-    background-position: center;
-    background-size: cover;
-
-    h1 {
-      color: transparent;
-    }
+    opacity: .08;
   }
 }
 
-.verys-image {
-  z-index: 150;
-  transition-duration: $transition-duration;
-  background: black;
-  background-position: center;
-  background-size: cover;
-
+#background3 {
   &:hover {
-    transition-duration: $transition-duration;
-    background: url('https://media.glassdoor.com/sqll/968657/verys-squarelogo-1426174317361.png') rgba(0, 0, 0, 0.3);
-    background-position: center;
-    background-size: cover;
+    opacity: .08;
+  }
+}
 
-    h1 {
-      color: transparent;
-    }
+#background4 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background1 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background5 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background6 {
+  &:hover {
+    opacity: .08;
   }
 }

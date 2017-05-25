@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Home from './home/home';
+import Project from './project/project';
 import './App.css';
 
 class App extends Component {
@@ -17,9 +23,12 @@ class App extends Component {
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div className="App" >
-          <Home />
-        </div>
+        <Router>
+          <div className="App">
+            <Route exact path='/' component={Home} />
+            <Route path='/project/:projectName' component={Project} />
+          </div>
+        </Router>
       </MuiThemeProvider>
     );
   }
