@@ -13,7 +13,7 @@ class Project extends Component {
   render() {
     return (
       <div className="projectContainer">
-        <div className="back-button">
+        <div className="projectContainer-backButton">
           <Link to={`/`}>
             <FontAwesome
               name='long-arrow-left'
@@ -22,6 +22,8 @@ class Project extends Component {
             />
           </Link>
         </div>
+
+
       </div>
     );
   }

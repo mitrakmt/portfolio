@@ -27,77 +27,160 @@ class Skills extends Component {
         lineHeight: '0 !important'
       },
     };
-    const tilesData = [
-      {
-        img: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png',
-        title: 'JavaScript'
-      },
-      {
-        img: 'https://nodejs.org/static/images/logos/nodejs-new-pantone-white.png',
-        title: 'Node'
-      },
-      {
-        img: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
-        title: 'React'
-      },
-      {
-        img: 'https://www.ag-grid.com/images/angular2.png',
-        title: 'Angular 1 & 2'
-      },
-      {
-        img: 'http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png',
-        title: 'Redux'
-      },
-      {
-        img: 'http://inversify.io/img/ts.png',
-        title: 'TypeScript'
-      },
-      {
-        img: 'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/courses/2479876/14570828119302_illu-cours_html5-css3.png',
-        title: 'HTML5'
-      },
-      {
-        img: 'https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206',
-        title: 'CSS3'
-      },
-      {
-        img: 'http://www.exuberantsolutions.com/course_logo/jquery-icon.png',
-        title: 'jQuery'
-      },
-      {
-        img: 'http://amartam.com/wp-content/uploads/2016/11/mongodb1.png',
-        title: 'MongoDB'
-      },
-      {
-        img: 'https://www.backupassist.com/images/features/sql-logo.png',
-        title: 'SQL'
-      },
-      {
-        img: 'https://cdn.auth0.com/blog/testing-react-with-jest/logo.png',
-        title: 'Jest'
-      }
-    ];
+
+    const clientData =
+      [
+        {
+          img: 'https://www.sololearn.com/Icons/Courses/1024.png',
+          title: 'JavaScript'
+        },
+        {
+          img: 'https://facebook.github.io/react/img/logo.svg',
+          title: 'React'
+        },
+        {
+          img: 'https://angular.io/resources/images/logos/angular/angular.svg',
+          title: 'Angular 1'
+        },
+        {
+          img: 'https://www.ag-grid.com/images/angular2.png',
+          title: 'Angular 2'
+        },
+        {
+          img: 'http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png',
+          title: 'Redux'
+        },
+        {
+          img: 'http://inversify.io/img/ts.png',
+          title: 'TypeScript'
+        },
+        {
+          img: 'http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png',
+          title: 'HTML5'
+        },
+        {
+          img: 'https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206',
+          title: 'CSS3'
+        },
+        {
+          img: 'http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png',
+          title: 'SASS/SCSS'
+        },
+        {
+          img: 'http://www.exuberantsolutions.com/course_logo/jquery-icon.png',
+          title: 'jQuery'
+        }
+      ]
+
+    const serverData =
+      [
+        {
+          img: 'http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png',
+          title: 'Node'
+        },
+        {
+          img: 'http://www.expressjs.com.cn/images/express.png',
+          title: 'Express'
+        },
+        {
+          img: 'https://avatars1.githubusercontent.com/u/10566080?v=3&s=400',
+          title: 'Socket.io'
+        },
+        {
+          img: 'https://azurecomcdn.azureedge.net/cvt-13f9af988a3bce151b5f3666660fb76825069825048a47e2c3f78ca61c38c685/images/page/services/cache/redis.png',
+          title: 'Redis'
+        }
+      ]
+
+      const databaseData =
+        [
+          {
+            img: 'https://www.backupassist.com/images/features/sql-logo.png',
+            title: 'MySQL'
+          },
+          {
+            img: 'http://amartam.com/wp-content/uploads/2016/11/mongodb1.png',
+            title: 'MongoDB'
+          },
+          {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png',
+            title: 'PostgreSQL'
+          },
+          {
+            img: 'http://docs.sequelizejs.com/manual/asset/logo-small.png',
+            title: 'Sequelize'
+          },
+          {
+            img: 'http://www.erikasland.com/static/images/mongoose.png',
+            title: 'Mongoose'
+          }
+        ]
+
+      const testingData =
+        [
+          {
+            img: 'https://cdn.auth0.com/blog/testing-react-with-jest/logo.png',
+            title: 'Jest'
+          },
+          {
+            img: 'https://camo.githubusercontent.com/431283cc1643d02167aac31067137897507c60fc/687474703a2f2f636861696a732e636f6d2f696d672f636861692d6c6f676f2e706e67',
+            title: 'Chai'
+          },
+          {
+            img: 'https://cldup.com/xFVFxOioAU.svg',
+            title: 'Mocha'
+          }
+        ]
+  
     return (
       <div className="skillsContainer">
         <div className="skillsContainer-header">
           <h1>Skills</h1>
         </div>
         <div className="skillsContainer-listContainer">
-          <div style={styles.root}>
-            <GridList
-              cellHeight={180}
-              style={styles.gridList}
-            >
-              <Subheader>Skills</Subheader>
-              {tilesData.map((tile) => (
-                <GridTile
-                  key={tile.img}
-                  title={tile.title}
-                >
-                  <img src={tile.img} />
-                </GridTile>
-              ))}
-            </GridList>
+          <h3>Client</h3>
+          <div className="skillsContainer-listContainer-skillGroup">
+            {
+              clientData.map((skill, i) => (
+                <div className="skillsContainer-listContainer-skillGroup-skill">
+                  <img src={skill.img} />
+                  <p>{skill.title}</p>
+                </div>
+              ))
+            }
+          </div>
+          <h3>Server</h3>
+          <div className="skillsContainer-listContainer-skillGroup">
+            {
+              serverData.map((skill, i) => (
+                <div className="skillsContainer-listContainer-skillGroup-skill">
+                  <img src={skill.img} />
+                  <p>{skill.title}</p>
+                </div>
+              ))
+            }
+          </div>
+          <h3>Database</h3>
+          <div className="skillsContainer-listContainer-skillGroup">
+            {
+              databaseData.map((skill, i) => (
+                <div className="skillsContainer-listContainer-skillGroup-skill">
+                  <img src={skill.img} />
+                  <p>{skill.title}</p>
+                </div>
+              ))
+            }
+          </div>
+          <h3>Testing</h3>
+          <div className="skillsContainer-listContainer-skillGroup">
+            {
+              testingData.map((skill, i) => (
+                <div className="skillsContainer-listContainer-skillGroup-skill">
+                  <img src={skill.img} />
+                  <p>{skill.title}</p>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>

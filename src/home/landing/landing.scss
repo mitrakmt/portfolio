@@ -339,6 +339,34 @@
     -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 
+    &:hover > &-line{
+      &:first-child {
+        animation-name: menuHoverAnimation;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+      }
+
+      &:nth-child(2) {
+        animation-name: menuHoverAnimation;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.3s;
+      }
+
+      &:last-child {
+        animation-name: menuHoverAnimation;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.6s;
+      }
+
+      @keyframes menuHoverAnimation {
+          0%   {margin-left: 0px;}
+          50%  {margin-left: -2px; width: 30px;}
+          100% {margin-left: 0px;}
+      }
+    }
+
     &-line {
       width: 25px;
       border-bottom: 3px solid white;
@@ -347,10 +375,14 @@
       transition: 1.55s 0.3s;
 
       &-active {
+        &-line {
+          width: 35px !important;
+        }
+
         &:first-child {
           transform: rotate(43deg);
           transition: 1.5s 0.5s;
-          width: 35px;
+          width: 35px !important;
           margin-top: 5px;
           top: 15px;
           margin-bottom: -1px;
@@ -366,7 +398,7 @@
         &:last-child {
           transform: rotate(-405deg);
           transition: 1.5s 0.5s;
-          width: 35px;
+          width: 35px !important;
           border-width: 5px;
           margin-top: -13px;
           margin-left: -5px;
