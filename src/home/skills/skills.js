@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import {Tabs, Tab} from 'material-ui/Tabs';
+import Slider from 'material-ui/Slider';
 import './skills.css';
 
 class Skills extends Component {
   constructor() {
     super();
     this.state = {
-      clientSkillShown: false,
-      serverSkillShown: false,
-      databaseSkillShown: false,
-      testingSkillShown: false
+      selectedTab: 'description'
     };
   }
 
@@ -31,117 +30,104 @@ class Skills extends Component {
       return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
     };
 
-    $(document).ready(function(){
-        $(window).scroll(function(){
-          if ($this.state.clientSkillShown === false) {
-            if ($('#clientSkillInViewport').isOnScreen()) {
-              for (let i = 0; i < 10; i++) {
-                (function(i){
-                  window.setTimeout(function() {
-                    $(`.clientData${i}`).addClass('skillAnimation');
-                  }, i * 300);
+    // $(document).ready(function(){
+    //     $(window).scroll(function(){
+    //       if ($('#clientSkillInViewport').isOnScreen()) {
 
-                }(i));
-              }
-              $this.setState({
-                clientSkillShown: true
-              })
-            }
-          }
+    //       }
 
-          if ($this.state.serverSkillShown === false) {
-            if ($('#serverSkillInViewport').isOnScreen()) {
-              for (let i = 0; i < 10; i++) {
-                (function(i){
-                  window.setTimeout(function() {
-                    $(`.serverData${i}`).addClass('skillAnimation');
-                  }, i * 300);
+    //     });
+    // });
+  }
 
-                }(i));
-              }
-              $this.setState({
-                serverSkillShown: true
-              })
-            }
-          }
-
-          if ($this.state.databaseSkillShown === false) {
-            if ($('#databaseSkillInViewport').isOnScreen()) {
-              for (let i = 0; i < 10; i++) {
-                (function(i){
-                  window.setTimeout(function() {
-                    $(`.databaseData${i}`).addClass('skillAnimation');
-                  }, i * 300);
-
-                }(i));
-              }
-              $this.setState({
-                databaseSkillShown: true
-              })
-            }
-          }
-
-          if ($this.state.testingSkillShown === false) {
-            if ($('#testingSkillInViewport').isOnScreen()) {
-              for (let i = 0; i < 10; i++) {
-                (function(i){
-                  window.setTimeout(function() {
-                    $(`.testingData${i}`).addClass('skillAnimation');
-                  }, i * 300);
-
-                }(i));
-              }
-              $this.setState({
-                testingSkillShown: true
-              })
-            }
-          }
-        });
-    });
+  changeTab = (event) => {
+    let newState;
+    let eventId = event.target.id;
+    if (event.target.id[0] === 'd') {
+      newState = 'description'
+    } else {
+      newState = 'experience'
+    }
+    this.setState({
+      selectedTab: newState
+    })
+    $(`#${eventId}`).addClass('clickAnimation')
+    setTimeout(() => {
+      $(`#${eventId}`).removeClass('clickAnimation')
+    }, 300)
   }
 
   render() {
+    const styles = {
+      headline: {
+        fontSize: 24,
+        paddingTop: 16,
+        marginBottom: 12,
+        fontWeight: 400,
+      },
+    };
+
     const clientData =
       [
         {
           img: 'https://www.sololearn.com/Icons/Courses/1024.png',
-          title: 'JavaScript'
+          title: 'JavaScript',
+          years: 5,
+          description: ''
         },
         {
           img: 'https://facebook.github.io/react/img/logo.svg',
-          title: 'React'
+          title: 'React',
+          years: 2,
+          description: ''
         },
         {
           img: 'https://angular.io/resources/images/logos/angular/angular.svg',
-          title: 'Angular 1'
+          title: 'Angular',
+          years: 4,
+          description: ''
         },
         {
           img: 'https://www.ag-grid.com/images/angular2.png',
-          title: 'Angular 2'
+          title: 'Angular2',
+          years: 1.5,
+          description: ''
         },
         {
           img: 'http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png',
-          title: 'Redux'
+          title: 'Redux',
+          years: 1,
+          description: ''
         },
         {
           img: 'http://inversify.io/img/ts.png',
-          title: 'TypeScript'
+          title: 'TypeScript',
+          years: 1,
+          description: ''
         },
         {
           img: 'http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png',
-          title: 'HTML5'
+          title: 'HTML5',
+          years: 5,
+          description: ''
         },
         {
           img: 'https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206',
-          title: 'CSS3'
+          title: 'CSS3',
+          years: 5,
+          description: ''
         },
         {
           img: 'http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png',
-          title: 'SASS/SCSS'
+          title: 'SASS',
+          years: 2,
+          description: ''
         },
         {
           img: 'http://www.exuberantsolutions.com/course_logo/jquery-icon.png',
-          title: 'jQuery'
+          title: 'jQuery',
+          years: 4,
+          description: ''
         }
       ]
 
@@ -149,19 +135,27 @@ class Skills extends Component {
       [
         {
           img: 'http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png',
-          title: 'Node'
+          title: 'Node',
+          years: 3,
+          description: ''
         },
         {
           img: 'http://www.expressjs.com.cn/images/express.png',
-          title: 'Express'
+          title: 'Express',
+          years: 2,
+          description: ''
         },
         {
           img: 'https://avatars1.githubusercontent.com/u/10566080?v=3&s=400',
-          title: 'Socket.io'
+          title: 'Socket.io',
+          years: 2,
+          description: ''
         },
         {
           img: 'https://azurecomcdn.azureedge.net/cvt-13f9af988a3bce151b5f3666660fb76825069825048a47e2c3f78ca61c38c685/images/page/services/cache/redis.png',
-          title: 'Redis'
+          title: 'Redis',
+          years: 1,
+          description: ''
         }
       ]
 
@@ -169,23 +163,33 @@ class Skills extends Component {
         [
           {
             img: 'https://www.backupassist.com/images/features/sql-logo.png',
-            title: 'MySQL'
+            title: 'MySQL',
+            years: 2,
+            description: ''
           },
           {
             img: 'http://amartam.com/wp-content/uploads/2016/11/mongodb1.png',
-            title: 'MongoDB'
+            title: 'MongoDB',
+            years: 2,
+            description: ''
           },
           {
             img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png',
-            title: 'PostgreSQL'
+            title: 'PostgreSQL',
+            years: 2,
+            description: ''
           },
           {
             img: 'http://docs.sequelizejs.com/manual/asset/logo-small.png',
-            title: 'Sequelize'
+            title: 'Sequelize',
+            years: 2,
+            description: ''
           },
           {
             img: 'http://www.erikasland.com/static/images/mongoose.png',
-            title: 'Mongoose'
+            title: 'Mongoose',
+            years: 2,
+            description: ''
           }
         ]
 
@@ -193,15 +197,21 @@ class Skills extends Component {
         [
           {
             img: 'https://cdn.auth0.com/blog/testing-react-with-jest/logo.png',
-            title: 'Jest'
+            title: 'Jest',
+            years: 0.5,
+            description: ''
           },
           {
             img: 'https://camo.githubusercontent.com/431283cc1643d02167aac31067137897507c60fc/687474703a2f2f636861696a732e636f6d2f696d672f636861692d6c6f676f2e706e67',
-            title: 'Chai'
+            title: 'Chai',
+            years: 1.5,
+            description: ''
           },
           {
             img: 'https://cldup.com/xFVFxOioAU.svg',
-            title: 'Mocha'
+            title: 'Mocha',
+            years: 1.5,
+            description: ''
           }
         ]
   
@@ -218,6 +228,28 @@ class Skills extends Component {
                 <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
                   <img src={skill.img} className={`clientData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
+                  <div className="skillsContainer-listContainer-skillGroup-skill-bar">
+                    <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs">
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`description${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'description' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Description
+                      </div>
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`experience${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'experience' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Experience
+                      </div>
+                    </div>
+                    {
+                      this.state.selectedTab === 'description' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.description}</p>
+                        </div>
+                    }
+                    {
+                      this.state.selectedTab === 'experience' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.years}</p>
+                        </div>
+                    }
+                  </div>
                 </div>
               ))
             }
@@ -229,6 +261,28 @@ class Skills extends Component {
                 <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
                   <img src={skill.img} className={`serverData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
+                  <div className="skillsContainer-listContainer-skillGroup-skill-bar">
+                    <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs">
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`description${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'description' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Description
+                      </div>
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`experience${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'experience' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Experience
+                      </div>
+                    </div>
+                    {
+                      this.state.selectedTab === 'description' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.description}</p>
+                        </div>
+                    }
+                    {
+                      this.state.selectedTab === 'experience' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.years}</p>
+                        </div>
+                    }
+                  </div>
                 </div>
               ))
             }
@@ -240,6 +294,28 @@ class Skills extends Component {
                 <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
                   <img src={skill.img} className={`databaseData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
+                  <div className="skillsContainer-listContainer-skillGroup-skill-bar">
+                    <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs">
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`description${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'description' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Description
+                      </div>
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`experience${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'experience' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Experience
+                      </div>
+                    </div>
+                    {
+                      this.state.selectedTab === 'description' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.description}</p>
+                        </div>
+                    }
+                    {
+                      this.state.selectedTab === 'experience' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.years}</p>
+                        </div>
+                    }
+                  </div>
                 </div>
               ))
             }
@@ -251,6 +327,28 @@ class Skills extends Component {
                 <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
                   <img src={skill.img} className={`testingData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
+                  <div className="skillsContainer-listContainer-skillGroup-skill-bar">
+                    <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs">
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`description${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'description' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Description
+                      </div>
+                      <div className="skillsContainer-listContainer-skillGroup-skill-bar-tabs-item" id={`experience${skill.title}${i}`} onClick={this.changeTab.bind(this)} style={this.state.selectedTab === 'experience' ? {borderBottom: '2px solid #e1253b'} : {}}>
+                        Experience
+                      </div>
+                    </div>
+                    {
+                      this.state.selectedTab === 'description' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.description}</p>
+                        </div>
+                    }
+                    {
+                      this.state.selectedTab === 'experience' &&
+                        <div className="skillsContainer-listContainer-skillGroup-skill-bar-info">
+                          <p>{skill.years}</p>
+                        </div>
+                    }
+                  </div>
                 </div>
               ))
             }
