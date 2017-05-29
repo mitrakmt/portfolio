@@ -30,14 +30,38 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background-color: $background-color;
 
   &-header {
     h5 {
       color: $primary-color;
     }
 
-    h1 {
-      font-family: 'Soho-std-bold';
+    p {
+      color: gray;
+      font-size: 11px;
+      margin-top: 3px;
+    }
+
+    .copyEmailToClipboard {
+      background-color: charcoal;
+      animation-duration: 0.3s;
+      padding: 9px 25px;
+      border-radius: 15px;
+      cursor: pointer;
+
+      h4 {
+        font-family: 'Soho-std-bold';
+        margin: 0;
+      }
+
+      &:hover {
+        background-color: #4C77ED;
+      }
+    }
+
+    .emailCopied {
+      background-color: #2EC967 !important;
     }
   }
 

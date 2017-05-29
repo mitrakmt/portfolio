@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import $ from 'jquery';
 import 'font-awesome/css/font-awesome.css'
 import './contact.css';
 
@@ -9,12 +10,33 @@ class Contact extends Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    $('.copyEmailToClipboard').on('click', () => {
+      this.copyToClipboard('#name');
+      $('.copyEmailToClipboard').addClass('emailCopied')
+      setTimeout(() => {
+        $('.copyEmailToClipboard').removeClass('emailCopied')
+      }, 5000)
+    }
+  )}
+
+  copyToClipboard = (element) => {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+
   render() {
     return (
       <div className="contactContainer">
         <div className="contactContainer-header">
           <h5>Contact</h5>
-          <h1>mike.mitrakos@gmail.com</h1>
+          <div className="copyEmailToClipboard">
+            <h4 id="name">mike.mitrakos@gmail.com</h4>
+          </div>
+          <p>Click to copy email to clipboard</p>
         </div>
         <div className="contactContainer-social">
           <h5>Social</h5>

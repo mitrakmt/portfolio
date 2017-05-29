@@ -1,33 +1,106 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
-import {GridList, GridTile} from 'material-ui/GridList';
-import IconButton from 'material-ui/IconButton';
-import Subheader from 'material-ui/Subheader';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import $ from 'jquery';
 import './skills.css';
 
 class Skills extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      clientSkillShown: false,
+      serverSkillShown: false,
+      databaseSkillShown: false,
+      testingSkillShown: false
+    };
+  }
+
+  componentDidMount() {
+    let $this = this;
+    $.fn.isOnScreen = function(){
+      var win = $(window);
+      var viewport = {
+          top : win.scrollTop(),
+          left : win.scrollLeft()
+      };
+      viewport.right = viewport.left + win.width();
+      viewport.bottom = viewport.top + win.height();
+
+      var bounds = this.offset();
+      bounds.right = bounds.left + this.outerWidth();
+      bounds.bottom = bounds.top + this.outerHeight();
+
+      return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+    };
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+          if ($this.state.clientSkillShown === false) {
+            if ($('#clientSkillInViewport').isOnScreen()) {
+              for (let i = 0; i < 10; i++) {
+                (function(i){
+                  window.setTimeout(function() {
+                    $(`.clientData${i}`).addClass('skillAnimation');
+                  }, i * 300);
+
+                }(i));
+              }
+              $this.setState({
+                clientSkillShown: true
+              })
+            }
+          }
+
+          if ($this.state.serverSkillShown === false) {
+            if ($('#serverSkillInViewport').isOnScreen()) {
+              for (let i = 0; i < 10; i++) {
+                (function(i){
+                  window.setTimeout(function() {
+                    $(`.serverData${i}`).addClass('skillAnimation');
+                  }, i * 300);
+
+                }(i));
+              }
+              $this.setState({
+                serverSkillShown: true
+              })
+            }
+          }
+
+          if ($this.state.databaseSkillShown === false) {
+            if ($('#databaseSkillInViewport').isOnScreen()) {
+              for (let i = 0; i < 10; i++) {
+                (function(i){
+                  window.setTimeout(function() {
+                    $(`.databaseData${i}`).addClass('skillAnimation');
+                  }, i * 300);
+
+                }(i));
+              }
+              $this.setState({
+                databaseSkillShown: true
+              })
+            }
+          }
+
+          if ($this.state.testingSkillShown === false) {
+            if ($('#testingSkillInViewport').isOnScreen()) {
+              for (let i = 0; i < 10; i++) {
+                (function(i){
+                  window.setTimeout(function() {
+                    $(`.testingData${i}`).addClass('skillAnimation');
+                  }, i * 300);
+
+                }(i));
+              }
+              $this.setState({
+                testingSkillShown: true
+              })
+            }
+          }
+        });
+    });
   }
 
   render() {
-    const styles = {
-      root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        lineHeight: '0 !important'
-      },
-      gridList: {
-        width: '100%',
-        height: '100%',
-        overflowY: 'auto',
-        lineHeight: '0 !important'
-      },
-    };
-
     const clientData =
       [
         {
@@ -139,44 +212,44 @@ class Skills extends Component {
         </div>
         <div className="skillsContainer-listContainer">
           <h3>Client</h3>
-          <div className="skillsContainer-listContainer-skillGroup">
+          <div className="skillsContainer-listContainer-skillGroup" id="clientSkillInViewport">
             {
               clientData.map((skill, i) => (
-                <div className="skillsContainer-listContainer-skillGroup-skill">
-                  <img src={skill.img} />
+                <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
+                  <img src={skill.img} className={`clientData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
                 </div>
               ))
             }
           </div>
           <h3>Server</h3>
-          <div className="skillsContainer-listContainer-skillGroup">
+          <div className="skillsContainer-listContainer-skillGroup" id="serverSkillInViewport">
             {
               serverData.map((skill, i) => (
-                <div className="skillsContainer-listContainer-skillGroup-skill">
-                  <img src={skill.img} />
+                <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
+                  <img src={skill.img} className={`serverData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
                 </div>
               ))
             }
           </div>
           <h3>Database</h3>
-          <div className="skillsContainer-listContainer-skillGroup">
+          <div className="skillsContainer-listContainer-skillGroup" id="databaseSkillInViewport">
             {
               databaseData.map((skill, i) => (
-                <div className="skillsContainer-listContainer-skillGroup-skill">
-                  <img src={skill.img} />
+                <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
+                  <img src={skill.img} className={`databaseData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
                 </div>
               ))
             }
           </div>
           <h3>Testing</h3>
-          <div className="skillsContainer-listContainer-skillGroup">
+          <div className="skillsContainer-listContainer-skillGroup" id="testingSkillInViewport">
             {
               testingData.map((skill, i) => (
-                <div className="skillsContainer-listContainer-skillGroup-skill">
-                  <img src={skill.img} />
+                <div className="skillsContainer-listContainer-skillGroup-skill" key={skill.title + i}>
+                  <img src={skill.img} className={`testingData${i}`} alt={skill.title} />
                   <p>{skill.title}</p>
                 </div>
               ))

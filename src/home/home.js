@@ -5,6 +5,7 @@ import Landing from './landing/landing';
 import Projects from './projects/projects';
 import Contact from './contact/contact';
 import Skills from './skills/skills';
+import Education from './education/education';
 import './home.css';
 
 class Home extends Component {
@@ -37,6 +38,7 @@ class Home extends Component {
         <div className="homeContainer-lineCenter" />
         <Projects />
         <Skills />
+        <Education />
         <Contact />
       </div>
     );

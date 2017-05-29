@@ -10,7 +10,7 @@
 
   &-header {
     h1 {
-      font-size: 9vw;
+      font-size: 7vw;
     }
   }
 
@@ -43,6 +43,8 @@
       flex-wrap: wrap;
       width: 100%;
       background-color: char;
+      animation-delay: 1s;
+      animation-duration: 1s;
       
       
       &-skill {
@@ -52,6 +54,8 @@
         align-self: center;
         flex-direction: row;
         text-align: center;
+        animation-delay: 1s;
+        animation-duration: 1s;
 
         img {
           width: 50px;
@@ -65,6 +69,26 @@
           margin-right: auto;
         }
       }
+    }
+
+    .skillAnimation {
+      animation-name: skillAnimation;
+      animation-delay: 0.5s;
+      animation-duration: 1s;
+      // @for $i from 1 through 25 {
+      //   &:nth-child(#{$i}) {
+      //     img {
+      //       animation-name: skillAnimation;
+      //       animation-delay: #{$i + 0.5}s;
+      //       animation-duration: #{$i + 0.5}s;
+      //     }
+      //   }
+      // }
+    }
+    @keyframes skillAnimation {
+      0%   {margin-top: 0px; margin-bottom: 0px;}
+      50%  {margin-top: -20px; margin-bottom: 20px;}
+      100% {margin-top: 0px; margin-bottom: 0px;}
     }
   }
 }
