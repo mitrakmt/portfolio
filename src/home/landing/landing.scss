@@ -109,7 +109,6 @@
       margin: 0;
       padding-left: 12vw;
       align-self: flex-start;
-      font-family: 'Soho-std-bold';
       color: $primary-color;
  
       &:first-child {
@@ -124,7 +123,6 @@
     &-sub {
       font-size: 2vw;
       font-weight: 100;
-      font-family: 'GothamLight';
       text-transform: uppercase;
       display: flex;
       flex-direction: row;
@@ -179,7 +177,6 @@
     left: 0;
     text-align: center;
     color: rgba(255,255,255,0.60);
-    font-family: 'GothamLight';
     font-size: 12px;
     letter-spacing: 1.5px;
     font-weight: 100;
@@ -251,7 +248,6 @@
     transform-origin: top left;
     z-index: 99;
     padding: 17px 0;
-    font-family: 'GothamLight';
     font-size: 14px;
     font-weight: 300;
 
@@ -338,34 +334,6 @@
     color: $primary-color;
     -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-
-    &:hover > &-line{
-      &:first-child {
-        animation-name: menuHoverAnimation;
-        animation-duration: 1.3s;
-        animation-iteration-count: infinite;
-      }
-
-      &:nth-child(2) {
-        animation-name: menuHoverAnimation;
-        animation-duration: 1.3s;
-        animation-iteration-count: infinite;
-        animation-delay: 0.3s;
-      }
-
-      &:last-child {
-        animation-name: menuHoverAnimation;
-        animation-duration: 1.3s;
-        animation-iteration-count: infinite;
-        animation-delay: 0.6s;
-      }
-
-      @keyframes menuHoverAnimation {
-          0%   {margin-left: 0px;}
-          50%  {margin-left: -2px; width: 30px;}
-          100% {margin-left: 0px;}
-      }
-    }
 
     &-line {
       width: 25px;

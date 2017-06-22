@@ -38,7 +38,7 @@ class Home extends Component {
         <div className="homeContainer-lineCenter" />
         <Projects />
         <Skills />
-        <Education />
+        {/*<Education />*/}
         <Contact />
       </div>
     );

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-$font-stack: 'Montserrat', sans-serif;
+$font-stack: 'Raleway', sans-serif;
 $primary-color: #e1253b;
 $background-color: #121212;
 $transition-duration: 0.3s;
@@ -8,4 +8,8 @@ $transition-duration: 0.3s;
 .small-divider {
   border-bottom: 1px solid gray;
   width: 20vw;
+}
+
+p, h1, h2, h3, h4, h5 {
+  font-family: $font-stack;
 }
