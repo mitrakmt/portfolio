@@ -1,23 +1,12 @@
+// in server.js
 const express = require('express');
-const path = require('path');
-
 const app = express();
-const PORT = process.env.PORT || 5000;
 
-// Priority serve any static files.
-app.use(express.static(path.resolve(__dirname, './public')));
+// Since the root/src dir contains our index.html
+app.use(express.static(__dirname + '/src/'));
 
-// Answer API requests.
-app.get('/api', function (req, res) {
-  res.set('Content-Type', 'application/json');
-  res.send('{"message":"Hello from the custom server!"}');
-});
-
-// All remaining requests return the React app, so it can handle routing.
-app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, './public', 'index.html'));
-});
-
-app.listen(PORT, function () {
-  console.log(`Listening on port ${PORT}`);
-});
+// Heroku bydefault set an ENV variable called PORT=443
+//  so that you can access your site with https default port.
+// Falback port will be 8080; basically for pre-production test in localhost
+// You will use $ npm run prod for this
+app.listen(process.env.PORT || 8080);
