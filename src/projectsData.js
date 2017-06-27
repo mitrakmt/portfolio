@@ -152,6 +152,12 @@ const projectsData = {
   "verys": {
     "company": "Verys",
     "title": "Software Engineer",
+    "accomplishments": [
+      '• Led front-end development of employee management software and Esports tournament & wager app in React Redux',
+      '• Built reusable UI components and optimized front-end to maximize speed and support all modern browsers',
+      '• Created features including: authentication, webcam & photo upload, member dashboard, search, pagination and much more',
+      '• Prepared estimates on feature scope and delivery timeline with product team'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": pandaLogin,
@@ -175,6 +181,12 @@ const projectsData = {
   "civility-international": {
     "company": "Civility International",
     "title": "Chief Technology Officer",
+    "accomplishments": [
+      '• Built full-stack application for all national Project Civility chapters to collaborate and manage their organization',
+      '• Designed complex schema to scale to hundreds of organizations and thousands of users with PostgreSQL',
+      '• Hired and managed a team of seven developers, and implemented all engineering processes for efficient work',
+      '• Implemented secure donations through the Stripe API'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": CIhome,
@@ -190,6 +202,10 @@ const projectsData = {
   "momentum": {
     "company": "Momentum",
     "title": "Software Engineer",
+    "accomplishments": [
+      '• Lead back-end engineer for Momentum Destinations (beta) creating REST API for three million users',
+      '• Architected server-side caching for most popular destinations using Mongo to increase load speed'
+    ],
     "techUsed": ["http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"],
     "screenshots": {
       "image1": momentumImage1,
@@ -204,6 +220,12 @@ const projectsData = {
   "hack-reactor": {
     "company": "Hack Reactor",
     "title": "Software Engineering Instructor",
+    "accomplishments": [
+      '• Led lectures for all technical topics including data structures, databases, Angular 2, Scaling & effective learning strategies',
+      '• Managed Hack Reactor Prep (LA) curriculum structure, program growth, and student success metrics',
+      '• Mentored 20 junior engineers in algorithms, debugging, code clarity, and system design choices',
+      '• Conducted advanced technical interviews with prospective students'
+    ],
     "techUsed": ["https://www.ag-grid.com/images/angular2.png", "https://www.sololearn.com/Icons/Courses/1024.png", "http://inversify.io/img/ts.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "http://amartam.com/wp-content/uploads/2016/11/mongodb1.png", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": notejsLanding,
@@ -219,6 +241,9 @@ const projectsData = {
   "healthyu": {
     "company": "HealthyU",
     "title": "Chief Technology Officer",
+    "accomplishments": [
+      'Under construction'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
@@ -232,6 +257,10 @@ const projectsData = {
   "seat-at-the-table": {
     "company": "Seat At the Table",
     "title": "Board Director & Software Engineer",
+    "accomplishments": [
+      '• Built web app for students to collectively brainstorm ideas for a Microsoft & SEAT sponsored hackathon',
+      '• Chosen from thousands of non-profits to speak at the United Nations on civic youth engagement'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/BlogImages/04042016115821AM/AngularImage.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206"],
     "screenshots": {
       "image1": seatLanding,
@@ -245,6 +274,9 @@ const projectsData = {
   "wobble-labs": {
     "company": "Wobble Labs",
     "title": "Co-Founder",
+    "accomplishments": [
+      'Under construction'
+    ],
     "techUsed": ["https://developer.apple.com/swift/images/swift-og.png", "https://www.sololearn.com/Icons/Courses/1024.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206", "http://www.exuberantsolutions.com/course_logo/jquery-icon.png"],
     "screenshots": {
       "image1": wobbleWebsite,
@@ -263,9 +295,34 @@ const projectsData = {
       wobbleWebsite, wobbleCreateEvent, wobbleEventDetails, wobbleMainfeed, wobbleMainfeed2, wobbleSignup, wobbleLogin, wobbleLogin2, wobbleNotifications, wobblePhotos, wobbleEvent
     ]
   },
+  "devspace": {
+    "company": "Devspace",
+    "title": "Product Owner",
+    "accomplishments": [
+      '• Architected advanced schema with 14 relational tables using PostgreSQL for future scalability and efficient data lookup',
+      '• Implemented OAuth with Github to integrate Github data with user created content',
+      '• Developed unit tests for Angular 2 components and MySQL database queries allowing for purposeful test driven development',
+      '• Created dynamic, fast, and responsive UI in Angular 2 using the reactive programming paradigm with RxJs'
+    ],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "screenshots": {
+      "image1": devspaceHome,
+      "image2": devspaceMember,
+      "image3": devspaceSearch1,
+      "image4": devspaceSearch2
+    },
+    "allPhotos": [
+      devspaceHome, devspaceMember, devspaceSearch1,devspaceSearch2
+    ]
+  },
   "notejs": {
     "company": "NoteJS",
     "title": "Team Lead",
+    "accomplishments": [
+      '• Architected advanced schema with 7 relational tables using PostgreSQL for future scalability and efficient data lookup',
+      '• Implemented secure user Authentication with password encryption and JWTs',
+      '• Created dynamic, fast, and responsive UI in React Redux'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": notejsLanding,
@@ -278,23 +335,13 @@ const projectsData = {
       notejsLanding, notejsHome, notejsNote, notejsFolders, notejsDocuments
     ]
   },
-  "devspace": {
-    "company": "Devspace",
-    "title": "Product Owner",
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
-    "screenshots": {
-      "image1": devspaceHome,
-      "image2": devspaceMember,
-      "image3": devspaceSearch1,
-      "image4": devspaceSearch2
-    },
-    "allPhotos": [
-      devspaceHome, devspaceMember, devspaceSearch1,devspaceSearch2
-    ]
-  },
   "pandemic": {
     "company": "Pandemic",
     "title": "Software Engineer",
+    "accomplishments": [
+      '• Wrote complex spatial hashing algorithm for efficient collision detection of 10,000+ nodes, improved rendering speed by 500%',
+      '• Built application to simulate the real-time spread of disease using Angular 1.3'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206", "http://www.exuberantsolutions.com/course_logo/jquery-icon.png"],
     "screenshots": {
       "image1": pandemicHome,
@@ -308,6 +355,10 @@ const projectsData = {
   "instagrub": {
     "company": "Instagrub",
     "title": "Co-Founder & Software Engineer",
+    "accomplishments": [
+      '• Built fast & responsive eCommerce web app in under two weeks using HTML, CSS, JavaScript, jQuery and Parse',
+      '• Scaled application to nearly a thousand users in three days'
+    ],
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206", "http://www.exuberantsolutions.com/course_logo/jquery-icon.png"],
     "screenshots": {
       "image1": IGstarbucks,

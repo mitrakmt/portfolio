@@ -96,7 +96,11 @@ class Project extends Component {
             <section>
               <div className="block">
                 <h4>Accomplishments</h4>
-                <p>{ this.state.accomplishments }</p>
+                {
+                  this.state.accomplishments.map(line => (
+                    <p>{ line }</p>
+                  ))
+                }
               </div>
             </section>
 
