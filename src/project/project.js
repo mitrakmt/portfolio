@@ -39,6 +39,7 @@ class Project extends Component {
         "image3": 'http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg'
       },
       allPhotos: [],
+      accomplishments: '',
       techUsed: []
     };
   }
@@ -46,6 +47,7 @@ class Project extends Component {
   componentWillMount() {
     let url = this.props.location.pathname.slice(9).toLowerCase();
     this.setState(projectsData[url])
+    window.scrollTo(0, 0);
   }
 
   handleOpen = () => {
@@ -72,6 +74,8 @@ class Project extends Component {
       />,
     ];
 
+    // <span className="first-character sc">I</span> for thing down below
+
     return (
       <div className="projectContainer">
         <div className="loadingAnimation">
@@ -92,7 +96,7 @@ class Project extends Component {
             <section>
               <div className="block">
                 <h4>Accomplishments</h4>
-                <p><span className="first-character sc">I</span>n 1978, Brian Smith landed in Southern California with a bag of sheepskin boots and hope. He fell in love with the sheepskin experience and was convinced the world would one day share this love. The beaches of Southern California had long been an epicenter of a relaxed, casual lifestyle, a lifestyle that Brian felt was a perfect fit for his brand. So he founded the UGG brand, began selling his sheepskin boots and they were an immediate sensation. By the mid 1980's, the UGG brand became a symbol of relaxed southern California culture, gaining momentum through surf shops and other shops up and down the coast of California, from San Diego to Santa Cruz. UGG boots reached beyond the beach, popping up in big cities and small towns all over, and in every level of society. Girls wore their surfer boyfriend's pair of UGG boots like a letterman jacket. When winter came along, UGG boots were in ski shops and were seen in lodges from Mammoth to Aspen.</p>
+                <p>{ this.state.accomplishments }</p>
               </div>
             </section>
 
@@ -127,7 +131,6 @@ class Project extends Component {
             <section>
               <div className="block">
                 <h4>Screenshots</h4>
-                <p><span className="first-character atw">W</span>hen the New York fashion community notices your brand, the world soon follows. The widespread love for UGG extended to Europe in the mid-2000's along with the stylish casual movement and demand for premium casual fashion. UGG boots and shoes were now seen walking the streets of London, Paris and Amsterdam with regularity. To meet the rising demand from new fans, UGG opened flagship stores in the UK and an additional location in Moscow. As the love spread farther East, concept stores were opened in Beijing, Shanghai and Tokyo. UGG Australia is now an international brand that is loved by all. This love is a result of a magical combination of the amazing functional benefits of sheepskin and the heightened emotional feeling you get when you slip them on your feet. In short, you just feel better all over when you wear UGG boots, slippers, and shoes.</p>
                 <div className="extra-screenshots">
                   <GridList
                     cellHeight={300}
@@ -153,7 +156,7 @@ class Project extends Component {
                     open={this.state.open}
                     onRequestClose={this.handleClose}
                   >
-                    Under constructions :)
+                    Under construction :)
                   </Dialog>
                 </div>
               </div>

@@ -124,29 +124,29 @@ const projectsData = {
       "letter": "D",
       "company": "Devspace",
       "title": "Co-Founder",
-      "imageName": "wobble-image",
-      "tagName": "wobble-labs"
+      "imageName": "devspace",
+      "tagName": "devspace"
     },
     {
       "letter": "N",
       "company": "Notejs",
       "title": "Co-Founder",
-      "imageName": "wobble-image",
-      "tagName": "wobble-labs"
+      "imageName": "notejs",
+      "tagName": "notejs"
     },
     {
       "letter": "I",
       "company": "Instagrub",
       "title": "Co-Founder",
-      "imageName": "wobble-image",
-      "tagName": "wobble-labs"
+      "imageName": "instagrub",
+      "tagName": "instagrub"
     },
     {
       "letter": "P",
       "company": "Pandemic",
       "title": "Co-Founder",
-      "imageName": "wobble-image",
-      "tagName": "wobble-labs"
+      "imageName": "pandemic",
+      "tagName": "pandemic"
     }
   ],
   "verys": {
@@ -206,10 +206,14 @@ const projectsData = {
     "title": "Software Engineering Instructor",
     "techUsed": ["https://www.ag-grid.com/images/angular2.png", "https://www.sololearn.com/Icons/Courses/1024.png", "http://inversify.io/img/ts.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "http://amartam.com/wp-content/uploads/2016/11/mongodb1.png", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
-      
+      "image1": notejsLanding,
+      "image2": notejsHome,
+      "image3": notejsNote,
+      "image4": notejsFolders,
+      "image5": notejsDocuments
     },
     "allPhotos": [
-      
+      notejsLanding, notejsHome, notejsNote, notejsFolders, notejsDocuments, notejsLanding, notejsHome, notejsNote, notejsFolders, notejsDocuments
     ]
   },
   "healthyu": {
@@ -217,10 +221,12 @@ const projectsData = {
     "title": "Chief Technology Officer",
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
-      
+      "image1": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
+      "image2": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
+      "image3": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
     },
     "allPhotos": [
-      
+      "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg"
     ]
   },
   "seat-at-the-table": {
@@ -291,7 +297,9 @@ const projectsData = {
     "title": "Software Engineer",
     "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206", "http://www.exuberantsolutions.com/course_logo/jquery-icon.png"],
     "screenshots": {
-      "image1": pandemicHome
+      "image1": pandemicHome,
+      "image2": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
+      "image3": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
     },
     "allPhotos": [
       pandemicHome
