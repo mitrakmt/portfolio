@@ -42,7 +42,7 @@ class Landing extends Component {
             </div>
           </div>
 
-          <div className="landingContainer-header" style={this.state.menuActive ? {opacity: 1, position: 'absolute'} : {opacity: 0, position: 'absolute'}}>
+          <div className="landingContainer-header" style={this.state.menuActive ? {opacity: 1, position: 'absolute'} : {opacity: 0, position: 'absolute', pointerEvents: 'none', cursor: 'default'}}>
             <div className="landingContainer-header-menuList">
               <h2>Experience</h2>
               <span className="small-divider" />

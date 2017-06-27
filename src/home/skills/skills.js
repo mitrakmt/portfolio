@@ -76,7 +76,7 @@ class Skills extends Component {
           level: '90'
         },
         {
-          img: 'https://angular.io/resources/images/logos/angular/angular.svg',
+          img: 'http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/BlogImages/04042016115821AM/AngularImage.png',
           title: 'Angular',
           years: 4,
           description: '',

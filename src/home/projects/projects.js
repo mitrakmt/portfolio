@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+import projectsData from '../../projectsData';
 import 'font-awesome/css/font-awesome.css'
 import './projects.css';
 
@@ -24,64 +25,13 @@ class Projects extends Component {
   }
 
   render() {
-    const experiences = [
-      {
-        letter: 'V',
-        company: 'Verys',
-        title: 'Software Engineer',
-        imageName: 'verys-image',
-        tagName: 'verys'
-      },
-      {
-        letter: 'C',
-        company: 'Civility International',
-        title: 'Chief Technology Officer',
-        imageName: 'civility-image',
-        tagName: 'civility-international'
-      },
-      {
-        letter: 'M',
-        company: 'Momentum',
-        title: 'Software Engineer',
-        imageName: 'momentum-image',
-        tagName: 'momentum'
-      },
-      {
-        letter: 'H',
-        company: 'Hack Reactor',
-        title: 'Software Engineering Instructor',
-        imageName: 'hackreactor-image',
-        tagName: 'hack-reactor'
-      },
-      {
-        letter: 'H',
-        company: 'HealthyU',
-        title: 'Chief Technology Officer',
-        imageName: 'healthyu-image',
-        tagName: 'healthyu'
-      },
-      {
-        letter: 'S',
-        company: 'Seat At the Table',
-        title: 'Board Director & Software Engineer',
-        imageName: 'seat-image',
-        tagName: 'seat-at-the-table'
-      },
-      {
-        letter: 'W',
-        company: 'Wobble Labs',
-        title: 'Co-Founder',
-        imageName: 'wobble-image',
-        tagName: 'wobble-labs'
-      }
-    ]
     return (
       <div className="projectsContainer">
         <div className="projectsContainer-header">
           <h1>Experience</h1>
         </div>
         {
-          experiences.map((experience, index) => (
+          projectsData.list.map((experience, index) => (
             <div className="projectsContainer-list" key={index}>
               <div className="projectsContainer-list-entry" id={index}>
                 <div className="projectsContainer-list-entry-labelBox">
