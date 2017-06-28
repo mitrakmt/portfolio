@@ -261,7 +261,7 @@ const projectsData = {
       '• Built web app for students to collectively brainstorm ideas for a Microsoft & SEAT sponsored hackathon',
       '• Chosen from thousands of non-profits to speak at the United Nations on civic youth engagement'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/BlogImages/04042016115821AM/AngularImage.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://edu.cbsystematics.com/Content/Education/FrontEnd/images/angular.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206"],
     "screenshots": {
       "image1": seatLanding,
       "image2": seatInfo,
@@ -342,7 +342,7 @@ const projectsData = {
       '• Wrote complex spatial hashing algorithm for efficient collision detection of 10,000+ nodes, improved rendering speed by 500%',
       '• Built application to simulate the real-time spread of disease using Angular 1.3'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206", "http://www.exuberantsolutions.com/course_logo/jquery-icon.png"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "http://edu.cbsystematics.com/Content/Education/FrontEnd/images/angular.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "https://html5hive.org/wp-content/uploads/2014/03/css-beginners-tutorial.jpg?x30206", "http://www.exuberantsolutions.com/course_logo/jquery-icon.png"],
     "screenshots": {
       "image1": pandemicHome,
       "image2": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
