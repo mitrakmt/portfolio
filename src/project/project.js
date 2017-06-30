@@ -95,7 +95,7 @@ class Project extends Component {
 
             <section>
               <div className="block">
-                <h4>Accomplishments</h4>
+                <h4 className="accomplishmentsHeading">Accomplishments</h4>
                 {
                   this.state.accomplishments.map(line => (
                     <p>{ line }</p>
@@ -112,7 +112,7 @@ class Project extends Component {
               <div className="block">
                 <h4>Technologies Used</h4>
                 <GridList
-                    cellHeight={100}
+                    cellHeight={190}
                     style={styles.gridList}
                     padding={15}
                     cols={6}
@@ -120,6 +120,7 @@ class Project extends Component {
                     {this.state.techUsed.map((tile) => (
                       <GridTile
                         key={tile}
+                        cols={2}
                       >
                         <img src={tile} />
                       </GridTile>
@@ -136,23 +137,11 @@ class Project extends Component {
               <div className="block">
                 <h4>Screenshots</h4>
                 <div className="extra-screenshots">
-                  <GridList
-                    cellHeight={300}
-                    style={styles.gridList}
-                    padding={15}
-                    cols={1}
-                  >
-                    <Subheader>Screenshots</Subheader>
-                    {this.state.allPhotos.map((tile) => (
-                      <GridTile
-                        key={tile}
-                        label="Dialog"
-                        onTouchTap={this.handleOpen}
-                      >
-                        <img src={tile} />
-                      </GridTile>
-                    ))}
-                  </GridList>
+                  {
+                    this.state.allPhotos.map((tile) => (
+                      <img src={tile} className="screenshot" />
+                    ))
+                  }
                   <Dialog
                     title="Dialog With Actions"
                     actions={actions}

@@ -80,6 +80,10 @@
     justify-content: center;
     transition-delay: 0.5s;
 
+    @media (max-width: 700px) { 
+      margin-left: 30px;
+    }
+
     &-menuList {
       display: flex;
       flex-direction: column;
@@ -128,7 +132,7 @@
       flex-direction: row;
       color: rgba(255,255,255,1.00);
       align-self: flex-start;
-      padding-left: 12vw;      
+      padding-left: 12vw;
 
       h4 {
         margin: 0;
@@ -149,6 +153,10 @@
         animation-fill-mode: both;
         animation-delay: 3.7s;
         animation-name: subIn;
+
+        @media (max-width: 700px) { 
+          margin-bottom: 12px;
+        }  
       }
 
       &-whiteLinLhorizontal02 {
@@ -164,6 +172,11 @@
         animation-fill-mode: both;
         animation-delay: 3.9s;
         animation-name: subIn;
+
+        @media (max-width: 700px) { 
+          margin-bottom: 12px;
+          height: 13px;
+        }  
       }
     }
   }

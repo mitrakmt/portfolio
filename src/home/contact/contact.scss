@@ -35,6 +35,10 @@
   &-header {
     h5 {
       color: $primary-color;
+      
+      @media (max-width: 700px) { 
+        font-size: 20px;
+      }
     }
 
     p {
@@ -69,10 +73,18 @@
 
     h5 {
       color: $primary-color;
+
+      @media (max-width: 700px) { 
+        font-size: 15px;
+      }
     }
 
     h3 {
       font-size: 22px;
+
+      @media (max-width: 700px) { 
+        font-size: 15px;
+      }
     }
 
     &-list {
@@ -87,6 +99,10 @@
         z-index: 500;
         transition-duration: 0.3s;
         font-size: 22px;
+
+        @media (max-width: 700px) { 
+          font-size: 12px;
+        }
 
         &:hover {
           color: $primary-color;
