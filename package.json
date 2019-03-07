@@ -21,6 +21,9 @@
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
+  "engines": {
+    "node": "8.15.x"
+  },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
