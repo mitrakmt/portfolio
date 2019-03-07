@@ -46,6 +46,7 @@ class Landing extends Component {
             <div className="landingContainer-header-menuList">
               <h2>Experience</h2>
               <span className="small-divider" />
+              <Link to={'/project/streamme'} style={{color: 'white', textDecoration: 'none'}}><h4>StreamMe</h4></Link>
               <Link to={'/project/verys'} style={{color: 'white', textDecoration: 'none'}}><h4>Verys</h4></Link>
               <Link to={'/project/civility-international'} style={{color: 'white', textDecoration: 'none'}}><h4>Civility International</h4></Link>
               <Link to={'/project/momentum'} style={{color: 'white', textDecoration: 'none'}}><h4>Momentum Dashboard</h4></Link>
@@ -79,7 +80,7 @@ class Landing extends Component {
             <span> - </span>
             <a href="https://www.angel.co/mike_mitrakos" target="_blank"> ANGELIST </a>
             <span> - </span>
-            <a href="https://www.linkedin.com/in/michaelmitrakos" target="_blank"> LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/mitrakos" target="_blank"> LINKEDIN</a>
           </nav>
         </div>
       </div>

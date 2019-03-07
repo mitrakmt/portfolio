@@ -67,8 +67,20 @@ import CIresearch from './images/CI/research.png';
 import CIteam from './images/CI/team.png';
 import CIpayments from './images/CI/payments.png';
 
+// StreamMe
+import streamme from './images/streamme/streamme.png';
+import streamme1 from './images/streamme/streamme1.png';
+import streamme2 from './images/streamme/streamme2.jpg';
+
 const projectsData = {
   "list": [
+    {
+      "letter": "S",
+      "company": "StreamMe",
+      "title": "Senior Software Engineer",
+      "imageName": "streamme-image",
+      "tagName": "streamme"
+    },
     {
       "letter": "V",
       "company": "Verys",
@@ -158,7 +170,7 @@ const projectsData = {
       '• Created features including: authentication, webcam & photo upload, member dashboard, search, pagination and much more',
       '• Prepared estimates on feature scope and delivery timeline with product team'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": pandaLogin,
       "image2": EPbilling,
@@ -178,6 +190,22 @@ const projectsData = {
       EPmodal, EPlogin, EPdashboard, EPfindmember, EPcreatemember, EPbilling, EPequipment, EPcreateemployee, EPprofile, EPmemberprofile, pandaRegister1, pandaRegister2, pandaLogin
     ]
   },
+  "streamme": {
+    "company": "StreamMe",
+    "title": "Senior Software Engineer",
+    "accomplishments": [
+      '• I focus on engineering and product for our new core business product.'
+    ],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://en.wikipedia.org/wiki/React_(JavaScript_library)#/media/File:React-icon.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "screenshots": {
+      "image1": streamme,
+      "image2": streamme1,
+      "image3": streamme2,
+    },
+    "allPhotos": [
+      streamme, streamme1, streamme2
+    ]
+  },
   "civility-international": {
     "company": "Civility International",
     "title": "Chief Technology Officer",
@@ -187,7 +215,7 @@ const projectsData = {
       '• Hired and managed a team of seven developers, and implemented all engineering processes for efficient work',
       '• Implemented secure donations through the Stripe API'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": CIhome,
       "image2": CItransparency,
@@ -206,7 +234,7 @@ const projectsData = {
       '• Lead back-end engineer for Momentum Destinations (beta) creating REST API for three million users',
       '• Architected server-side caching for most popular destinations using Mongo to increase load speed'
     ],
-    "techUsed": ["http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"],
+    "techUsed": ["http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"],
     "screenshots": {
       "image1": momentumImage1,
       "image2": momentumImage2,
@@ -226,7 +254,7 @@ const projectsData = {
       '• Mentored 20 junior engineers in algorithms, debugging, code clarity, and system design choices',
       '• Conducted advanced technical interviews with prospective students'
     ],
-    "techUsed": ["https://www.ag-grid.com/images/angular2.png", "https://www.sololearn.com/Icons/Courses/1024.png", "http://inversify.io/img/ts.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "http://amartam.com/wp-content/uploads/2016/11/mongodb1.png", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "techUsed": ["https://www.ag-grid.com/images/angular2.png", "https://www.sololearn.com/Icons/Courses/1024.png", "http://inversify.io/img/ts.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "http://amartam.com/wp-content/uploads/2016/11/mongodb1.png", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": notejsLanding,
       "image2": notejsHome,
@@ -244,7 +272,7 @@ const projectsData = {
     "accomplishments": [
       'Under construction'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png", "https://cdn.auth0.com/blog/testing-react-with-jest/logo.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
       "image2": "http://cdn.wallpapersafari.com/73/40/QVxjEq.jpg",
@@ -304,7 +332,7 @@ const projectsData = {
       '• Developed unit tests for Angular 2 components and MySQL database queries allowing for purposeful test driven development',
       '• Created dynamic, fast, and responsive UI in Angular 2 using the reactive programming paradigm with RxJs'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://www.ag-grid.com/images/angular2.png", "http://inversify.io/img/ts.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": devspaceHome,
       "image2": devspaceMember,
@@ -323,7 +351,7 @@ const projectsData = {
       '• Implemented secure user Authentication with password encryption and JWTs',
       '• Created dynamic, fast, and responsive UI in React Redux'
     ],
-    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "http://www.expressjs.com.cn/images/express.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
+    "techUsed": ["https://www.sololearn.com/Icons/Courses/1024.png", "https://facebook.github.io/react/img/logo.svg", "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png", "http://www.mrc-productivity.com/blog/wp-content/uploads/2013/06/HTML5_SupportingElements_51.png", "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png", "https://avatars1.githubusercontent.com/u/10566080?v=3&s=400", "https://www.backupassist.com/images/features/sql-logo.png"],
     "screenshots": {
       "image1": notejsLanding,
       "image2": notejsHome,
