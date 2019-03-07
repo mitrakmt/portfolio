@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import ReactImage from '../../images/react.svg';
+import ExpressImage from '../../images/express.png';
+import RedisImage from '../../images/redis.png';
+import MongoImage from '../../images/mongo.jpeg';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 import './skills.css';
@@ -69,7 +73,7 @@ class Skills extends Component {
           level: '90'
         },
         {
-          img: 'https://facebook.github.io/react/img/logo.svg',
+          img: ReactImage,
           title: 'React',
           years: 2,
           description: '',
@@ -143,7 +147,7 @@ class Skills extends Component {
           level: '90'
         },
         {
-          img: 'http://www.expressjs.com.cn/images/express.png',
+          img: ExpressImage,
           title: 'Express',
           years: 2,
           description: '',
@@ -157,7 +161,7 @@ class Skills extends Component {
           level: '65'
         },
         {
-          img: 'https://azurecomcdn.azureedge.net/cvt-13f9af988a3bce151b5f3666660fb76825069825048a47e2c3f78ca61c38c685/images/page/services/cache/redis.png',
+          img: RedisImage,
           title: 'Redis',
           years: 1,
           description: '',
@@ -175,7 +179,7 @@ class Skills extends Component {
             level: '75'
           },
           {
-            img: 'http://amartam.com/wp-content/uploads/2016/11/mongodb1.png',
+            img: MongoImage,
             title: 'MongoDB',
             years: 2,
             description: '',

@@ -36,7 +36,7 @@ class Landing extends Component {
             <h1>Michael</h1>
             <h1>Mitrakos</h1>
             <div className="landingContainer-header-sub">
-              <h4>Software Developer</h4>
+              <h4>Senior Software Engineer</h4>
               <span className="landingContainer-header-sub-whiteLinLhorizontal01" />
               <span className="landingContainer-header-sub-whiteLinLhorizontal02" />
             </div>
