@@ -40,12 +40,19 @@ class Project extends Component {
       },
       allPhotos: [],
       accomplishments: '',
-      techUsed: []
+      techUsed: [],
+      onDoubletap: false
     };
   }
 
   componentWillMount() {
     let url = this.props.location.pathname.slice(9).toLowerCase();
+    console.log('url', url)
+    if (url === 'doubletap') {
+      this.setState({
+        onDoubletap: true
+      })
+    }
     this.setState(projectsData[url])
     window.scrollTo(0, 0);
   }
@@ -95,7 +102,7 @@ class Project extends Component {
 
             <section>
               <div className="block">
-                <h4 className="accomplishmentsHeading">Accomplishments</h4>
+                <h4 className="accomplishmentsHeading">{this.state.onDoubletap ? 'About' : 'Accomplishments'}</h4>
                 {
                   this.state.accomplishments.map(line => (
                     <p>{ line }</p>
@@ -110,7 +117,7 @@ class Project extends Component {
 
             <section>
               <div className="block">
-                <h4>Technologies Used</h4>
+                <h4>{this.state.onDoubletap ? 'Clients' : 'Technologies Used'}</h4>
                 <GridList
                     cellHeight={190}
                     style={styles.gridList}

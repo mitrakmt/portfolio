@@ -72,6 +72,23 @@ import streamme from './images/streamme/streamme.png';
 import streamme1 from './images/streamme/streamme1.png';
 import streamme2 from './images/streamme/streamme2.jpg';
 
+// doubletap
+import saga from './images/doubletap/saga.png';
+import laforge from './images/doubletap/laforge.jpg';
+import soah from './images/doubletap/soah.jpg';
+import rise from './images/doubletap/rise.jpg';
+import auth0 from './images/doubletap/auth0.jpg';
+import hulu from './images/doubletap/hulu.png';
+import sc1 from './images/doubletap/sc1.png';
+import sc2 from './images/doubletap/sc2.png';
+import sc3 from './images/doubletap/sc3.png';
+import sc4 from './images/doubletap/sc4.png';
+import sc5 from './images/doubletap/sc5.png';
+import sc6 from './images/doubletap/sc6.png';
+import sc7 from './images/doubletap/sc7.png';
+import sc8 from './images/doubletap/sc8.png';
+import sc9 from './images/doubletap/sc9.png';
+
 // Tech Logos
 import ReactImage from './images/react.svg';
 import ExpressImage from './images/express.png';
@@ -80,6 +97,13 @@ import RedisImage from './images/redis.png';
 
 const projectsData = {
   "list": [
+    {
+      "letter": "D",
+      "company": "DoubleTap Consulting",
+      "title": "President",
+      "imageName": "doubletap-image",
+      "tagName": "doubletap"
+    },
     {
       "letter": "S",
       "company": "StreamMe",
@@ -210,6 +234,33 @@ const projectsData = {
     },
     "allPhotos": [
       streamme, streamme1, streamme2
+    ]
+  },
+  "doubletap": {
+    "company": "DoubleTap Consulting",
+    "title": "President",
+    "accomplishments": [
+      `Michael serves as President of DoubleTap Consulting. His focus is
+      on project management, product ideation and engineering
+      standards. He works closely with each internal team to make
+      sure every project is delivered on-time and with a high degree of
+      polish. Michael is currently a senior software engineer for a
+      video streaming company where he leads frontend and product
+      development. He has multiple years of experience as a senior
+      software engineer on small to large products sustaining
+      hundreds of thousands of users. He also has years of engineering
+      and leadership experience leading teams and building products
+      for companies of all sizes, and has also spent two years at a
+      software development firm working with Fortune 500 clients.`
+    ],
+    "techUsed": [hulu, laforge, rise, soah, auth0, saga],
+    "screenshots": {
+      "image1": sc1,
+      "image2": sc2,
+      "image3": sc3,
+    },
+    "allPhotos": [
+      sc1, sc2, sc3, sc4, sc5, sc6, sc7, sc8, sc9
     ]
   },
   "civility-international": {
