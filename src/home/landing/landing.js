@@ -36,7 +36,7 @@ class Landing extends Component {
             <h1>Michael</h1>
             <h1>Mitrakos</h1>
             <div className="landingContainer-header-sub">
-              <h4>President @ DoubleTap Consulting | Senior Software Engineer</h4>
+              <h4>President @ DoubleTap Consulting</h4>
               <span className="landingContainer-header-sub-whiteLinLhorizontal01" />
               <span className="landingContainer-header-sub-whiteLinLhorizontal02" />
             </div>
@@ -58,7 +58,7 @@ class Landing extends Component {
           </div>
 
           {/* Bottom Text */}
-          
+
           <a className="landingContainer-discover">
             DISCOVER MY WORKS ↓
           </a>
